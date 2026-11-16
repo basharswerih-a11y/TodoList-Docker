@@ -1,0 +1,9 @@
+
+services:
+  todo-list:
+    build: .
+    container_name: todo-list-app
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+  
